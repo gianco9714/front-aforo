@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*html, body { height: 100%; }*/
+/*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("assets/fonts/HelveticaNeue-Light.otf");
+  src: url("assets/fonts/HelveticaNeueLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("assets/fonts/HelveticaNeue-Light47.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+html * {
+  font-family: HelveticaNeue; }
+
+html, body {
+  height: 100%;
+  background-color: #F5F7FB;
+}

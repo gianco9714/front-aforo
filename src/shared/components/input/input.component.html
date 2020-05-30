@@ -1,0 +1,21 @@
+<div
+  class="form-group "
+  [ngClass]="control.invalid && (control.dirty || control.touched) ? 'form-group--error' : ''">
+  <label for="name" *ngIf="label" class="label-common">
+    {{ label }}
+  </label>
+
+  <input
+    autocomplete="new-password"
+    [ngClass]="[(control.invalid && (control.dirty || control.touched)) ? 'error' : '', inputClass]"
+    [attr.type]="type"
+    [attr.maxlength]="maxlength"
+    [attr.minlength]="minlength" class="form-control form-control--log"
+    [attr.id]="idx"
+    [(ngModel)]="value"
+    [placeholder]="placeholder"
+    (blur)="onBlur($event.target)"
+    (keypress)="onKeypress($event)"
+    [disabled]="disabled"/>
+  <small *ngIf="control.invalid && (control.dirty || control.touched)" class="error-msg">{{ getErrorText() }}</small>
+</div>

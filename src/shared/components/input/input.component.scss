@@ -1,0 +1,32 @@
+.form-control {
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 16px;
+  color: gray;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px 19px 12px 12px;
+}
+
+.form-group {
+  display: grid;
+  padding-top: 16px;
+  &--error {
+    .form-control {
+      border-color: red;
+    }
+  }
+}
+.label-common {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 15px;
+  color: gray;
+  margin-bottom: 15px;
+}
+.error-msg {
+  color: red;
+  font-size: 11px;
+  line-height: 12px;
+  padding: 0px 10px;
+}

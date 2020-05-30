@@ -1,0 +1,31 @@
+<div class="text-center container-main">
+  <section class="login-view">
+    <div class="row center-items">
+      <div class="col-sm-6 col-md-6 big-card big-card--blue">
+        AQUI VA EL LOGO Y EL NOMBRE DE LA EMPRESA
+      </div>
+      <div class="col-sm-6 col-md-6 big-card text-left big-card--white">
+        <h2 class="subtitle" style="margin-top: 0px!important; margin-bottom: 10px!important;">
+          Bienvenido al
+          <span class="subtitle subtitle--strong" style="margin-top: 0px!important; margin-bottom: 10px!important;">Portal NombreEMPRESA</span>
+        </h2>
+        <form [formGroup]="loginForm">
+          <div class="content-form">
+            <app-input idx="ipd" placeholder="Ej:usuario" label="Usuario" formControlName="username" maxlength="10">
+            </app-input>
+            <img src="assets/arrow-left.png" *ngIf="userNameControl.value !== ''" maxlength="10">
+          </div>
+          <div class="content-form">
+            <app-input label="Contrase&ntilde;a" idx="password" formControlName="password" placeholder="Ingrese su contrase&ntilde;a"
+                      type="password" maxlength="10">
+            </app-input>
+            <img src="assets/img/clear-gray.png" >
+          </div>
+          <div class="text-right" style="float:right">
+            <button class="btn btn-primary btn--login text-left" type="submit">INGRESAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
